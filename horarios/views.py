@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 def horarios(request):
     contexto = {
-        'title' : 'Shorties',
+        'title' : '✂️ Shorties',
         'text' : 'HORARIOS'
     }
     return render(request, 'horarios/index.html', contexto)

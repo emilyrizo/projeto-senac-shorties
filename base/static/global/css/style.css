@@ -149,7 +149,6 @@ body {
 .team-title {
   background-color: #0000ff;
   font-size: 2.7rem;
-  /* letter-spacing: 0.15rem; */
   font-family: "wheaton-capitals.capitals-regular";
   text-transform: uppercase;
   text-align: center;
@@ -217,6 +216,89 @@ body {
   text-align: justify;
   line-height: 2.2rem;
 }
+
+/* ____________________ */
+
+#accordionPanelsStayOpenExample {
+  margin: 5rem auto;
+  background-color: #212121;
+  padding-bottom: 2.5rem;
+  border-radius: 2rem
+}
+
+#container-ext-servicos {
+  width: 80%;
+  align-content: center;
+  margin: auto;
+}
+
+.title-servicos {
+  background-color: #0000ff;
+  font-size: 2.7rem;
+  font-family: "wheaton-capitals.capitals-regular";
+  text-transform: uppercase;
+  text-align: center;
+  color: #efe81c !important;
+  font-size: 3rem;
+  padding-top: 1.8rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.accordion-item {
+  border: none; 
+  background-color: #212121; 
+}
+
+.accordion-button {
+  font-family: "Satoshi-Bold";
+  font-size: 1.6rem;
+  background-color: #212121;
+  color: #ffaef0;
+}
+
+.price {
+  color: #71fb6c;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #212121;
+  color: #ff7ee7;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-button:active,
+.accordion-button:hover {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 1rem !important; 
+  color: #ff7ee7;
+  background-color: #2d2d2d;
+}
+
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:active,
+.accordion-button:hover,
+.accordion-button:not(.collapsed) {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #212121;
+  color: #fff;
+  border: none;
+}
+
 
 @media (max-width: 1024px) {
   #carouselExampleAutoplaying {

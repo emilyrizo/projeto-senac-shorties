@@ -5,6 +5,6 @@ from django.shortcuts import render
 
 def servicos(request):
     contexto = {
-        'title' : 'Shorties',
+        'title' : '✂️ Shorties',
     }
     return render(request, 'servicos/index.html', contexto)

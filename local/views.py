@@ -5,6 +5,6 @@ from django.shortcuts import render
 
 def local(request):
     contexto = {
-        'title' : 'BarberQueer',
+        'title' : '✂️ Shorties',
     }
     return render(request, 'local/index.html', contexto)

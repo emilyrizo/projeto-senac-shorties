@@ -3,16 +3,13 @@
 {% include 'global/partials/menu.html' %}
 {% include 'global/partials/banner.html' %}
 
-
-<article class="container">
-  {% block texto %}{% endblock texto %}
+<article class="container home-content">
+  {% block texto_home %}{% endblock texto_home %}
+  {% block team %}{% endblock team %}
 </article>
 
-<article class="container">
-  <div>
-    {% block texto_home %}{% endblock texto_home %}
-    {% block team %}{% endblock team %}
-  </div>
+<article class="container servicos-content">
+  {% block servicos %}{% endblock servicos %}
 </article>
 
 </body>
