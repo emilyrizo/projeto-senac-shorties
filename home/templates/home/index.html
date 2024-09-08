@@ -1,0 +1,58 @@
+{% extends "global/base.html" %}
+{% load static %}
+
+{% block texto_home %}
+
+<div class="container-home">
+  <h1 class="text-home text-home-title">Bem-vindos à <span style="color: #efe81c"><strong>Shorties</strong></span>!</h1>
+  <p class="text-home">Somos uma barbearia inclusiva, comprometida em proporcionar mais do que apenas um corte de cabelo, mas uma experiência de cuidado, carinho, respeito e autenticidade. Com uma pegada bem retrô e dedicada ao público <span style="color: #ff7ee7">LGBTQIA+</span>, nossa barbearia é um espaço onde a nostalgia dos <span style="color: #71fb6c">anos 80</span> se encontra com a modernidade, oferecendo um ambiente acolhedor e vibrante.</p>
+  <p class="text-home">Nosso time é formado por profissionais que entendem e celebram a diversidade. Acreditamos que cada pessoa merece um espaço onde possa expressar sua verdadeira identidade, sentir-se segura e acolhida, exatamente como ela é. Aqui TODOS são bem vindos... inclusive o seu bichinho, pois somos <span style="color: #7ebaff">pet friendly</span> também!</p>
+  <p class="text-home">Venha fazer parte da nossa comunidade e descubra um novo jeito de se cuidar. Na Shorties seu corte é mais do que um visual, é um ato de liberdade.</p>
+  <p class="text-home">Somos livres, aliados e parceiros!</p>
+</div>
+
+{% endblock texto_home %}
+
+{% block team %}
+
+
+<div id="container-cards" class="container-cards">
+
+  <div class="team">
+    <h2 class="team-title">Dream Team</h2>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-4 card-div">
+      <div class="card">
+        <img src="{% static 'global/img/derek.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text-title title-derek"><strong>DEREK - BARBEIRO / PROPRIETÁRIO</strong></p>
+          <p class="card-text">"Eu queria que a Shorties representasse exatamente quem eu sou - um queer orgulhoso e criativo. Em vez de o espaço ser apenas uma barbearia LGBTQIA+, pareceu mais orgânico para mim ser um espaço inclusivo que acolhesse a todos, rompendo com as normas e celebrando a diversidade em todos os níveis."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 card-div">
+      <div class="card">
+        <img src="{% static 'global/img/mya.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text-title title-mya"><strong>MYA - CABELEREIRA / ESTILISTA</strong></p>
+          <p class="card-text">Com quase uma década de experiência em alguns dos melhores salões e barbearias de Londres, Mya é especialista em cortes com tesoura para todos os gêneros e estilos, desde mullets curtos até os fades. Ela se destaca em criar estilos fáceis de manter, adaptando ao estilo de vida de cada cliente, com uma abordagem focada em texturas suaves e naturais.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 card-div">
+      <div class="card">
+        <img src="{% static 'global/img/craig.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text-title title-craig"><strong>CRAIG - BARBEIRO</strong></p>
+          <p class="card-text">Vindo da Escócia, Craig traz consigo 12 anos de experiência em alguns dos melhores estabelecimentos de Glasgow e Edimburgo. Ele adora se expressar criativamente, oferecendo desde delicados cortes com tesoura, até os cortes mais arrojados e modernos. Ele está sempre pronto para atender a qualquer pedido.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock team %}

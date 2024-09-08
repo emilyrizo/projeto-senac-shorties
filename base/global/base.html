@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% include 'global/partials/head.html' %}
+{% include 'global/partials/menu.html' %}
+{% include 'global/partials/banner.html' %}
+
+
+<article class="container">
+  {% block texto %}{% endblock texto %}
+</article>
+
+<article class="container">
+  <div>
+    {% block texto_home %}{% endblock texto_home %}
+    {% block team %}{% endblock team %}
+  </div>
+</article>
+
+</body>
+</html>
