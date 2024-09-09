@@ -33,7 +33,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "segoeuisl";
-  /* font-family: "Satoshi", sans-serif; */
   font-size: 1.6rem;
   font-weight: 400;
   list-style: none;
@@ -53,6 +52,10 @@ body {
   width: 12rem;
 }
 
+.img-logo-resp {
+  display: none;
+}
+
 .navbar-brand {
   padding: 0;
   margin: 0;
@@ -60,7 +63,6 @@ body {
 
 .navbar-nav {
   gap: 3rem;
-  margin-left: 3.5rem;
 }
 
 .nav-link {
@@ -68,15 +70,20 @@ body {
   margin: 0;
 }
 
+.navbar-toggler-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
 .custom-navbar-text {
   color: #fff !important;
   /* color: #f8f248 !important; */
-  font-size: 2.3rem;
+  font-size: 2.2rem;
+  padding-bottom: .2rem;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
   letter-spacing: 0.1rem;
   font-family: "wheaton-capitals.capitals-regular";
-  /* text-transform: uppercase; */
   transition: transform 0.2s ease;
 }
 
@@ -85,17 +92,19 @@ body {
   transform: scale(1.08);
   background-color: #0000ff;
   border-radius: .5rem;
-  /* color: #04c9fa !important; */
+  border-bottom: .2rem solid #efe81c;
+  border-right: .2rem solid #efe81c;
 }
 
 #carouselExampleAutoplaying {
-  width: 90%rem;
+  width: 90%;
   margin: 0 auto;
 }
 
 .carousel-inner img {
   width: 100%; 
   height: auto;
+  margin-right: 0;
 }
 
 .navbar-toggler-icon {
@@ -130,9 +139,27 @@ footer ul {
 /* ____________________ */
 
 
-@media (max-width: 1024px) {
+
+@media (max-width: 992px) {
+  .navbar-nav .nav-item:last-child {
+    /* margin-bottom: 1rem; */
+    padding-bottom: 2.5rem;
+  }
+
+  .img-logo-resp {
+    display: block;
+    margin: 0.4rem;
+    margin-left: 1rem;
+    width: 20rem;
+  }
+
+  .img-logo {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
   #carouselExampleAutoplaying {
-    width: 100%;
-    color: rgb(239, 232, 28);
+    max-width: 144rem;
   }
 }

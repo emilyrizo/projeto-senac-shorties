@@ -1,12 +1,21 @@
+.container-local {
+  width: 80%;
+  background-color: #212121;
+  padding: .1rem 1.5rem;
+  margin: 6rem auto 3rem;
+  border-radius: 2rem;
+  box-shadow: 7px 7px 2px 0px #efe81c;
+}
+
 #local-map {
   position: relative;
-  padding-bottom: 40.31%; /* Altura proporcional (408/1012 * 100) */
+  padding-bottom: 40.50%; 
   height: 0;
   overflow: hidden;
-  max-width: 70%;
-  background: #ccc;
+  max-width: 95%;
   margin: 5rem auto;
-  border-radius: 1rem;
+  
+  
 }
 
 #local-map iframe {
@@ -15,5 +24,40 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border: 1rem solid #212121;
+}
+
+.address {
+  font-family: "wheaton-capitals.capitals-regular";
+  text-align: center;
+  /* color: #efe81c; */
+  color: white;
+  margin-bottom: .8rem;
+}
+
+.phone {
+  font-family: "wheaton-capitals.capitals-regular";
+  text-align: center;
+  /* color: #efe81c; */
+  color: white;
+  margin-bottom: 7rem;
+}
+
+.address-phone {
+  justify-content: center;
+}
+
+.address img {
+  height: 4rem;
+}
+
+.phone img {
+  height: 4rem;
+  margin-right: .5rem;
+  margin-bottom: .3rem;
+}
+
+.phone, .address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

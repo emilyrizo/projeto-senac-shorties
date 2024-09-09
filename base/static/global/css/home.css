@@ -26,9 +26,10 @@
 
 #container-cards {
   background-color: #212121;
-  padding-bottom: 2.5rem;
+  padding-bottom: 4rem;
   border-radius: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 7rem;
+  box-shadow: 5px 5px 1px 0px #efe81c;
 }
 
 .team-title {
@@ -41,8 +42,13 @@
   font-size: 3rem;
   padding-top: 1.8rem;
   padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   border-radius: 2rem 2rem 0 0;
+  border-bottom: .6rem ridge #efe81c;
+}
+
+.block-team {
+  padding: 0 3rem;
 }
 
 .card-div {

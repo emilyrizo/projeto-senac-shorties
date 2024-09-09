@@ -1,12 +1,14 @@
 #accordionPanelsStayOpenExample {
-  margin: 5rem auto 7rem;
+  width: 80%;
+  margin: 6rem auto 7rem;
   background-color: #212121;
   padding-bottom: 2.5rem;
-  border-radius: 2rem
+  border-radius: 2rem;
+  box-shadow: 5px 5px 2px 0px #efe81c;
 }
 
 #container-ext-servicos {
-  width: 80%;
+  width: 75%;
   align-content: center;
   margin: auto;
 }
@@ -15,7 +17,7 @@
   background-color: #0000ff;
   font-size: 2.7rem;
   font-family: "wheaton-capitals.capitals-regular";
-  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   text-align: center;
   color: #efe81c !important;
   font-size: 3rem;
@@ -23,6 +25,7 @@
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   border-radius: 2rem 2rem 0 0;
+  border-bottom: .6rem ridge #efe81c;
 }
 
 .accordion-item {
@@ -31,14 +34,19 @@
 }
 
 .accordion-button {
-  font-family: "segoeuib";
+  font-family: "wheaton-capitals.capitals-regular";
   font-size: 1.6rem;
   background-color: #212121;
   color: #ff7ee7;
 }
 
+.accordion-button img {
+  width: 2.5rem;
+}
+
 .price {
   color: #71fb6c;
+  font-family: "wheaton-capitals.capitals-regular";
 }
 
 .accordion-button:not(.collapsed) {

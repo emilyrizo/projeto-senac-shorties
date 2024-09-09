@@ -22,67 +22,14 @@
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-{% comment %} <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="d-flex">
-        <img src="{% static 'global/img/banner1.jpg' %}" class="d-block w-33" alt="...">
-        <img src="{% static 'global/img/banner3.jpg' %}" class="d-block w-33" alt="...">
-        <img src="{% static 'global/img/banner2.jpg' %}" class="d-block w-33" alt="...">
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="d-flex">
-        <img src="{% static 'global/img/banner8.jpg' %}" class="d-block w-33" alt="...">
-        <img src="{% static 'global/img/banner7.jpg' %}" class="d-block w-33" alt="...">
-        <img src="{% static 'global/img/banner6.jpg' %}" class="d-block w-33" alt="...">
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="d-flex">
-        <img src="{% static 'global/img/banner4.jpg' %}" class="d-block w-33" alt="...">
-        <img src="{% static 'global/img/banner5.jpg' %}" class="d-block w-33" alt="...">
-        <img src="{% static 'global/img/banner9.jpg' %}" class="d-block w-33" alt="...">
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="d-flex">
-        <img src="{% static 'global/img/banner10.jpg' %}" class="d-block w-33" alt="...">
-        <img src="{% static 'global/img/banner11.jpg' %}" class="d-block w-33" alt="...">
-        <img src="{% static 'global/img/banner12.jpg' %}" class="d-block w-33" alt="...">
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="d-flex">
-        <img src="{% static 'global/img/banner14.jpg' %}" class="d-block w-33" alt="...">
-        <img src="{% static 'global/img/banner15.jpg' %}" class="d-block w-33" alt="...">
-        <img src="{% static 'global/img/banner13.jpg' %}" class="d-block w-33" alt="...">
-      </div>
-    </div>
-    <!-- Adicione mais itens conforme necessário -->
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> {% endcomment %}
 
 {% endblock servicos_banner %}
 
@@ -95,7 +42,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-              CORTE DE CABELO -&nbsp;<span class="price">£39</span>
+              CORTE DE CABELO &nbsp &nbsp; <img src="{% static 'global/img/icons-arrow.png' %}" alt=""> <span class="price">&nbsp &nbsp£39</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
@@ -107,7 +54,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-              COMPRIMENTO MÉDIO E LONGO -&nbsp;<span class="price">£45</span>
+              COMPRIMENTO MÉDIO E LONGO &nbsp &nbsp; <img src="{% static 'global/img/icons-arrow.png' %}" alt=""> <span class="price">&nbsp &nbsp£45</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
@@ -119,7 +66,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-              APENAS LATERAIS -&nbsp;<span class="price">£27</span>
+              APENAS LATERAIS &nbsp &nbsp; <img src="{% static 'global/img/icons-arrow.png' %}" alt=""> <span class="price">&nbsp &nbsp £27</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
@@ -131,7 +78,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-              RESTYLE -&nbsp;<span class="price">£50</span>
+              RESTYLE &nbsp &nbsp; <img src="{% static 'global/img/icons-arrow.png' %}" alt=""> <span class="price">&nbsp &nbsp £50</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
@@ -143,7 +90,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-              BARBA CURTA -&nbsp;<span class="price">£15</span>
+              BARBA CURTA &nbsp &nbsp; <img src="{% static 'global/img/icons-arrow.png' %}" alt=""> <span class="price">&nbsp &nbsp £15</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
@@ -155,7 +102,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
-              BARBA LONGA -&nbsp;<span class="price">£20</span>
+              BARBA LONGA &nbsp &nbsp; <img src="{% static 'global/img/icons-arrow.png' %}" alt=""> <span class="price">&nbsp &nbsp £20</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
@@ -167,7 +114,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
-              COMBO: CORTE DE CABELO + BARBA CURTA -&nbsp;<span class="price">£50</span>
+              COMBO: CORTE DE CABELO + BARBA CURTA &nbsp &nbsp; <img src="{% static 'global/img/icons-arrow.png' %}" alt=""> <span class="price">&nbsp &nbsp £50</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
@@ -179,7 +126,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
-              COMBO: CORTE BUZZCUT + BARBA CURTA -&nbsp;<span class="price">£42</span>
+              COMBO: CORTE BUZZCUT + BARBA CURTA &nbsp &nbsp; <img src="{% static 'global/img/icons-arrow.png' %}" alt=""> <span class="price">&nbsp &nbsp £42</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">

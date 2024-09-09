@@ -1,16 +1,23 @@
 {% extends "global/base.html" %}
+{% load static %}
 
 {% block banner %}
   {% include 'global/partials/banner.html' %}
 {% endblock banner %}
 
 {% block local %}
-<div id="local-map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.788900598141!2d-0.05554118255615235!3d51.5537698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d3beb762d5b%3A0x197f6b792b07e9f!2sShorties%20Barber!5e0!3m2!1spt-BR!2sbr!4v1725830402281!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <div>
-    112 Lower Clapton Rd, Lower Clapton, London E5 0QR, Reino Unido
-  <div>
+<div class="container-local">
+  <div id="local-map">
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.788900598141!2d-0.05554118255615235!3d51.5537698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d3beb762d5b%3A0x197f6b792b07e9f!2sShorties%20Barber!5e0!3m2!1spt-BR!2sbr!4v1725830402281!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
 </div>
-
-
 {% endblock local %}
+
+{% block endereco %}
+<div class="address-phone">
+  <p class="address"><img src="{% static 'global/img/icons8-endereço-96.png' %}" alt=""> 112 Lower Clapton Rd, Lower Clapton, London E5 0QR, Reino Unido</p>
+  <p class="phone"><img src="{% static 'global/img/icons8-telefone-sem-uso-96.png' %}" alt=""> Telefone: 07555600491</p>
+</div>
+{% endblock endereco %}
