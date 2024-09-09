@@ -1,3 +1,38 @@
 {% extends "global/base.html" %}
 
-{% block titulo %}Horarios{% endblock titulo %}
+{% load static %}
+
+{% block banner %}
+  {% include 'global/partials/banner.html' %}
+{% endblock banner %}
+
+{% block horarios %}
+
+<div class="container-horarios">
+  <div class="hr-funcionamento">
+    <h3>Horário de funcionamento:</h3>
+    <ol class="list-horarios">
+      <li><img src="{% static 'global/img/icon-barber5.png' %}" alt="">Terça à sexta: 10:00h - 19:00h</li>
+      <li><img src="{% static 'global/img/icon-barber5.png' %}" alt="">Sábado: 09:00h - 17:00h</li>
+      <li>❌ Domingo e Segunda: fechado</li>
+    </ol>
+  </div>
+  <div class="hr-profissionais">
+    <h3>Horário dos profissionais:</h3>
+    <ul class="list-profissionais">
+      <li><img src="{% static 'global/img/icon-barber3.png' %}" alt=""> DEREK - De terça a sábado</li>
+      <li><img src="{% static 'global/img/icon-barber1.png' %}" alt=""> MYA - Às sextas e sábados</li>
+      <li><img src="{% static 'global/img/icon-barber2.png' %}" alt=""> CRAIG - De terça a sábado</li>      
+    </ul>
+  </div>
+</div>
+
+{% endblock horarios %}
+
+
+<!-- segunda-feira, Fechado
+terça-feira, 10:00–19:00
+quarta-feira, 10:00–19:00
+quinta-feira, 10:00–19:00
+sexta-feira, 10:00–19:00
+sábado, 09:00–17:00 -->

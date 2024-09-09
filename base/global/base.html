@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-{% include 'global/partials/head.html' %}
-{% include 'global/partials/menu.html' %}
-{% include 'global/partials/banner.html' %}
+<html lang="pt-BR">
+<head>
+  {% include 'global/partials/head.html' %}
+</head>
+<body>
+  {% include 'global/partials/menu.html' %}
+
+  {% block banner %}{% endblock banner %}
+  {% block servicos_banner %}{% endblock servicos_banner %}
 
 <article class="container home-content">
   {% block texto_home %}{% endblock texto_home %}
@@ -12,5 +18,14 @@
   {% block servicos %}{% endblock servicos %}
 </article>
 
+<article class="container local-content">
+  {% block local %}{% endblock local %}
+</article>
+
+<article class="container horarios-content">
+  {% block horarios %}{% endblock horarios %}
+</article>
+
 </body>
+  {% include 'global/partials/footer.html' %}
 </html>

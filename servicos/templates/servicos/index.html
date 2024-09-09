@@ -1,4 +1,91 @@
 {% extends "global/base.html" %}
+{% load static %}
+
+{% block servicos_banner %}
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'global/img/banner1.png' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'global/img/banner2.png' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'global/img/banner3.png' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'global/img/banner4.png' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'global/img/banner5.png' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+{% comment %} <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="d-flex">
+        <img src="{% static 'global/img/banner1.jpg' %}" class="d-block w-33" alt="...">
+        <img src="{% static 'global/img/banner3.jpg' %}" class="d-block w-33" alt="...">
+        <img src="{% static 'global/img/banner2.jpg' %}" class="d-block w-33" alt="...">
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="d-flex">
+        <img src="{% static 'global/img/banner8.jpg' %}" class="d-block w-33" alt="...">
+        <img src="{% static 'global/img/banner7.jpg' %}" class="d-block w-33" alt="...">
+        <img src="{% static 'global/img/banner6.jpg' %}" class="d-block w-33" alt="...">
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="d-flex">
+        <img src="{% static 'global/img/banner4.jpg' %}" class="d-block w-33" alt="...">
+        <img src="{% static 'global/img/banner5.jpg' %}" class="d-block w-33" alt="...">
+        <img src="{% static 'global/img/banner9.jpg' %}" class="d-block w-33" alt="...">
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="d-flex">
+        <img src="{% static 'global/img/banner10.jpg' %}" class="d-block w-33" alt="...">
+        <img src="{% static 'global/img/banner11.jpg' %}" class="d-block w-33" alt="...">
+        <img src="{% static 'global/img/banner12.jpg' %}" class="d-block w-33" alt="...">
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="d-flex">
+        <img src="{% static 'global/img/banner14.jpg' %}" class="d-block w-33" alt="...">
+        <img src="{% static 'global/img/banner15.jpg' %}" class="d-block w-33" alt="...">
+        <img src="{% static 'global/img/banner13.jpg' %}" class="d-block w-33" alt="...">
+      </div>
+    </div>
+    <!-- Adicione mais itens conforme necessário -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> {% endcomment %}
+
+{% endblock servicos_banner %}
+
 
 {% block servicos %}
 
@@ -13,7 +100,7 @@
           </h2>
           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
             <div class="accordion-body">
-              Uma consulta completa, onde elaboramos o melhor visual para você. Seguido de uma lavagem, corte e finalização com os melhores produtos para combinar perfeitamente com seu estilo de vida.
+              Uma consulta completa, onde elaboramos o melhor visual para você. Seguida de uma lavagem, corte e finalização com os melhores produtos para combinar perfeitamente com seu estilo de vida.
             </div>
           </div>
         </div>
