@@ -2,6 +2,7 @@
 @import url('./servicos.css');
 @import url('./local.css');
 @import url('./horarios.css');
+@import url('./comentarios.css');
 
 @font-face {
   font-family: "segoeuisl";

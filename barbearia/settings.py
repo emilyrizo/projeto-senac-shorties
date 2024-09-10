@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     "home",
     "horarios",
     "local",
-    "servicos"
-
+    "servicos",
+    "comentarios"
 ]
 
 MIDDLEWARE = [

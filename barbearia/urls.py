@@ -24,4 +24,5 @@ urlpatterns = [
     path('horarios/', include('horarios.urls')),
     path('local/', include('local.urls')),
     path('servicos/', include('servicos.urls')),
+    path('comentarios/', include('comentarios.urls'))
 ]

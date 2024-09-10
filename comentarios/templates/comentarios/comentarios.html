@@ -1,0 +1,24 @@
+{% extends "global/base.html" %}
+
+{% block comentarios %}
+
+<div class="container-feedback">
+
+    <h1 class="title-feedback">Feedback</h1>
+    <form action="{% url 'gravar' %}" method="post">
+        {% csrf_token %}
+        <label for="nome">Nome</label>
+        <input type="text" value="{{nome}}" name="nome" class="form-control {% if nome_error %} is-invalid {% endif %}">        
+        <label for="email">Comentário</label>
+        <input type="text" value="{{comentario}}" name="comentario" class="form-control {% if email_error %} is-invalid {% endif %}">
+        <p></p>
+        {% if msg_error %}
+        <div class="alert alert-danger">
+            {{msg_error}}
+        </div>
+        {% endif %}
+        <button class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+{% endblock comentarios %}
