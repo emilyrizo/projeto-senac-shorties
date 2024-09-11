@@ -29,23 +29,25 @@
 
 
 <div class="container-feedback-list mt-5">
-    <h2>Comentários Cadastrados</h2>
-    <table class="table table-striped">
-        <tr>
-            {% comment %} <th>id</th> {% endcomment %}
-            <th>nome</th>
-            <th>comentario</th>
-            <td>Ações</td>
-        </tr>
+    <h2 class="title-cadastro">Comentários</h2>
+    <table class="table table-dark table-hover">
+        <thead class="coment-table">
+            <tr class="table-primary">
+                {% comment %} <th>id</th> {% endcomment %}
+                <th class="table-name">Nome</th>
+                <th class="table-coment">Comentários:</th>
+                {% comment %} <td>Ações</td> {% endcomment %}
+            </tr>
+        </thead>
         {% for pessoa in pessoas %}
-        <tr class="coment-table">
+        <tr>
             {% comment %} <td>{{pessoa.id_pessoa}}</td> {% endcomment %}
             <td>{{pessoa.nome}}</td>
             <td>{{pessoa.comentario}}</td>          
-            <td>
+            {% comment %} <td>
                 <a href="{% url 'editar' pessoa.id_pessoa %}">Editar</a>
                 <a href="{% url 'apagar' pessoa.id_pessoa %}">Excluir</a>
-            </td>
+            </td> {% endcomment %}
         </tr>
         {% endfor %}
     </table>

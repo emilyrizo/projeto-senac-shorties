@@ -60,6 +60,17 @@
 
   /* __________________________ */
 
-.coment-table {
-    display: table-row !important;
+.container-feedback-list {
+    width: 70%;
+    margin: 0 auto 12rem;
+}
+
+.title-cadastro {
+    color: #fff;
+    font-family: "wheaton-capitals.capitals-regular";
+    margin: 7rem 0 2rem;
+}
+
+.table-name, .table-coment {
+    font-family: "wheaton-capitals.capitals-regular";   
 }
