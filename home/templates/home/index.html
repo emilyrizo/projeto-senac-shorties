@@ -58,3 +58,26 @@
 </div>
 
 {% endblock team %}
+
+{% block info_team %}
+
+<div class="container">
+  <div class="container-artigo">
+    {% for artigo in artigos %}
+    <div class="card-content"> 
+      <div class="card card-artigo" style="width: 22rem;">
+
+        <img class="bd-placeholder-img rounded-circle img-artigo" width="140" height="140" src="{{ artigo.foto.url }}" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"></rect>
+        <h2 class="fw-normal title-artigo">{{ artigo.tema }}</h2>
+        <p class="card-text-artigo">{{ artigo.conteudo }}</p>
+        <p><a class="btn btn-artigo" target="_blank" href="{{ artigo.url }}">Clique aqui</a></p>
+
+      </div>
+    </div>   
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock info_team %} 
+
+

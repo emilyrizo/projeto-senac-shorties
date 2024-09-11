@@ -2,18 +2,20 @@
 
 {% block comentarios %}
 
-<div class="container">
+<div class="container-feedback-list mt-5">
+    <h2>Comentários Cadastrados</h2>
     <table class="table table-striped">
         <tr>
-            <th>id</th>
+            {% comment %} <th>id</th> {% endcomment %}
             <th>nome</th>
             <th>comentario</th>
+            <td>Ações</td>
         </tr>
         {% for pessoa in pessoas %}
         <tr>
-            <td>{{pessoa.id_pessoa}}</td>
+            {% comment %} <td>{{pessoa.id_pessoa}}</td> {% endcomment %}
             <td>{{pessoa.nome}}</td>
-            <td>{{pessoa.comentario}}</td>
+            <td>{{pessoa.comentario}}</td>          
             <td>
                 <a href="{% url 'editar' pessoa.id_pessoa %}">Editar</a>
                 <a href="{% url 'apagar' pessoa.id_pessoa %}">Excluir</a>
@@ -22,4 +24,5 @@
         {% endfor %}
     </table>
 </div>
-{% endblock %}
+
+{% endblock comentarios %}

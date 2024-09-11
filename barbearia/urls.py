@@ -16,6 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.contrib.auth.views import LoginView
+
+from django.conf import settings
+from rest_framework import routers
+from home.views import TopicoViewSet
+
+router = routers.DefaultRouter()
+router.register('home',TopicoViewSet)
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -24,5 +33,12 @@ urlpatterns = [
     path('horarios/', include('horarios.urls')),
     path('local/', include('local.urls')),
     path('servicos/', include('servicos.urls')),
-    path('comentarios/', include('comentarios.urls'))
+    path('feedbacks/', include('comentarios.urls')),
+    path('admin/', admin.site.urls)
 ]
+
+urlpatterns += [
+    path('accounts/', include('django.contrib.auth.urls')),
+]
+
+urlpatterns+= static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

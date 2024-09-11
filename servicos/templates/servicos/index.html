@@ -140,3 +140,59 @@
   </div>
 
 {% endblock servicos %}
+
+{% comment %} {% block informacoes %}{% endblock informacoes %} {% endcomment %}
+
+{% comment %} {% block informacoes %}
+
+<div class="container">
+    <div class="row">
+        {% for info in infos %}
+        <div class="col-2 col-md-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    {{ info.tema }}
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <img src="{{ info.foto.url }}" class="img-fluid">
+                    </li>
+                    <li class="list-group-item">
+                        <!-- Botão para abrir o modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#descricaoModal{{ info.id }}">
+                            Ver Descrição
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        {% endfor %}
+    </div>
+</div>
+
+
+<!-- Modal para exibir a descrição -->
+{% for info in infos %}
+<!-- Modal -->
+<div class="modal fade" id="descricaoModal{{ info.id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">{{ info.tema }}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            {{ info.conteudo }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock informacoes %} {% endcomment %}

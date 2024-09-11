@@ -28,8 +28,8 @@
   background-color: #212121;
   padding-bottom: 4rem;
   border-radius: 2rem;
-  margin-bottom: 7rem;
-  box-shadow: 5px 5px 1px 0px #efe81c;
+  margin-bottom: 9rem;
+  /* box-shadow: 3px 2.7px 1px 0px #efe81c; */
 }
 
 .team-title {
@@ -44,7 +44,7 @@
   padding-bottom: 2rem;
   margin-bottom: 4rem;
   border-radius: 2rem 2rem 0 0;
-  border-bottom: .6rem ridge #efe81c;
+  border-bottom: .5rem ridge #efe81c;
 }
 
 .block-team {
@@ -107,3 +107,65 @@
   text-align: justify;
   line-height: 2.2rem;
 }
+
+/* _______________________*/
+
+.container-artigo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.card-artigo {
+  display: flex;
+  align-items: center;
+}
+
+.img-artigo {
+  transition: transform 0.2s ease;
+}
+
+.img-artigo:hover {
+  transform: scale(1.02) translateX(1px) translateY(1px);
+  box-shadow: 4px 5px 40px 0px rgba(239, 232, 28, 0.7); 
+}
+
+.title-artigo {
+  border-radius: .5rem;
+  color: #efe81c;
+  font-size: 1.6rem;
+  letter-spacing: .06rem;
+  font-family: "wheaton-capitals.capitals-regular";
+  margin: 1.2rem 0 .8rem;
+}
+
+.card-text-artigo {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.div-btn-artigo {
+  margin-top: auto;
+  justify-content: center;
+  padding-bottom: .2rem;
+}
+
+.btn-artigo {
+  background-color: #353535;
+  border-right: 0.2rem solid #aeaeae;
+  border-bottom: 0.1rem solid #aeaeae;;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: .3rem 1rem .5rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-artigo:hover {
+  background-color: #ff7ee7;
+  transform: scale(1.02) translateX(1px) translateY(-0.7px);
+}
+
+
+
+

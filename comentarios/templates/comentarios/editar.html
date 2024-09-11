@@ -1,0 +1,21 @@
+{% extends "global/base.html" %}
+
+{% block comentarios %}
+
+<div class="container-feedback">
+  <h1 class="title-feedback">Editar contato</h1>
+  <form action="{% url 'atualizar' %}" method="post">
+    {% csrf_token %}
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" class="form-control" value="{{pessoa.nome}}">        
+    <label for="comentario">Comentário</label>
+    <input type="text" name="comentario" class="form-control" value="{{pessoa.comentario}}">
+    <br>
+    <button class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+{% endblock comentarios %}

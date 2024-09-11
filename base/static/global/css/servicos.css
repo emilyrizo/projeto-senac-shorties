@@ -4,7 +4,7 @@
   background-color: #212121;
   padding-bottom: 2.5rem;
   border-radius: 2rem;
-  box-shadow: 5px 5px 2px 0px #efe81c;
+  /* box-shadow: 3px 2.7px 1px 0px #efe81c; */
 }
 
 #container-ext-servicos {
@@ -25,7 +25,7 @@
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   border-radius: 2rem 2rem 0 0;
-  border-bottom: .6rem ridge #efe81c;
+  border-bottom: .5rem ridge #efe81c;
 }
 
 .accordion-item {

@@ -5,6 +5,7 @@
 </head>
 <body>
   {% include 'global/partials/menu.html' %}
+  <!-- {% block info %}{% endblock info %} -->
 
   {% block banner %}{% endblock banner %}
   {% block servicos_banner %}{% endblock servicos_banner %}
@@ -12,6 +13,7 @@
 <article class="container home-content">
   {% block texto_home %}{% endblock texto_home %}
   {% block team %}{% endblock team %}
+  {% block info_team %}{% endblock info_team %}
 </article>
 
 <article class="container servicos-content">
